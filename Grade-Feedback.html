@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Grades & Feedback</title>
+  <link rel="stylesheet" href="Grade-Feedback.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Grades & Feedback</h1>
+    <h2>Performance Overview</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Grade</th>
+          <th>Feedback</th>
+        </tr>
+      </thead>
+      <tbody id="gradesTableBody"></tbody>
+    </table>
+
+    <canvas id="performanceChart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="Grade-Feedback.js"></script>
+</body>
+</html>

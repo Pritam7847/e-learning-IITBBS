@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Catalog</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+  <header>
+    <h1>Course Catalog</h1>
+
+    <div class="controls">
+        <label for="departmentFilter">Filter Courses:</label>
+        <select id="departmentFilter">
+          <option value="all">All Courses</option>
+          <option value="C++">C++</option>
+          <option value="Python">Python</option>
+          <option value="Html & CSS">HTML & CSS</option>
+          <option value="Java">Java</option>
+          <option value="WebDevelopment">Web Development</option>
+          <option value="Cybersecurity">Cybersecurity</option>
+          <option value="SQL">SQL</option>
+          <option value="AI">AI</option>
+        </select>
+      </div>
+      
+
+      <input type="text" id="searchInput" placeholder="Search courses...">
+      <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+      <button onclick="downloadCourses()">⬇ Download Courses</button>
+    </div>
+
+    <p id="courseCount"></p>
+  </header>
+
+  <main id="courseContainer"></main>
+
+  <script src="script2.js"></script>
+</body>
+</html>

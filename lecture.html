@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="lecture.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <section id="lectureAccess">
+    <h2>📘 Student Lecture Access</h2>
+    <p>Welcome! Access your recorded sessions, live classes, and downloadable materials right here.</p>
+
+    <div class="lecture-cards">
+      <div class="card" onclick="openLecture('live')">
+        <h3> 📡 Live Classes</h3>
+        <p>Join sessions in real time with your instructors.</p>
+        <a href="live.html"><button>class</button></a>
+      </div>
+     
+      <div class="card" onclick="openLecture('recorded')">
+        <h3>🎥 Recorded Lectures</h3>
+        <p>Revisit classroom content anytime.</p>
+        <a href="record.html"><button>video</button></a>
+      </div>
+
+      <div class="card" onclick="openLecture('materials')">
+        <h3>📁 Course Materials</h3>
+        <p>Download your notes, slides, and more.</p>
+        <a href="material.html"><button>Source</button></a>
+      </div>
+    </div>
+
+    <div class="lecture-display" id="lectureDisplay">
+      <h3 id="lectureTitle"></h3>
+      <p id="lectureContent"></p>
+      <a id="lectureLink" class="access-btn" href="#" target="_blank" style="display: none;">Access Now</a>
+    </div>
+  </section>
+
+  <section id="attendanceLogs">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <h1>📋 Attendance Logs</h1>
+  
+      <input type="text" id="searchInput" placeholder="Search course..." />
+  
+      <table id="attendanceTable">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="attendanceBody"></tbody>
+      </table>
+    </div>
+        <!-- Attendance records will be inserted here -->
+      </tbody>
+    </table>
+  </section>
+  
+  <section id="emailReminders">
+    <h2>✉ Email Reminders</h2>
+    <form id="reminderForm">
+      <label for="email">Student Email:</label>
+      <input type="email" id="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+      <button type="submit">Send Reminder</button>
+    </form>
+  </section>
+
+  <script src="lecture.js"></script>
+</body>
+</html>

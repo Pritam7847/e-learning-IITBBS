@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Classes Portal</title>
+  <link rel="stylesheet" href="live.css" />
+</head>
+<body>
+  <div class="hero-background"></div>
+  <div class="container">
+    <h1>🎥 Live Classes Portal</h1>
+
+    <input type="text" id="searchInput" placeholder="Search for a course..." />
+
+    <div id="classList" class="class-list"></div>
+  </div>
+
+  <div id="progressReport" class="progress-report">
+    <h2>📊 Progress Report</h2>
+    <p>Total Classes: <span id="totalClasses">0</span></p>
+    <p>Classes Attended: <span id="attendedClasses">0</span></p>
+    <p>Classes Missed: <span id="missedClasses">0</span></p>
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </div>
+  
+  <script src="live.js"></script>
+</body>
+</html>

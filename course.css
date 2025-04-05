@@ -1,0 +1,155 @@
+/* Global Reset & Font */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(-45deg, #00c6ff, #0072ff, #ff758c, #ff7eb3);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    transition: background 0.5s, color 0.5s;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background: linear-gradient(-45deg, #222831, #393e46, #00adb5, #eeeeee);
+    color: #f4f4f4;
+  }
+  
+  /* Gradient Animation */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 900px;
+    margin: 60px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background 0.3s;
+  }
+  
+  .dark-mode .container {
+    background: rgba(44, 44, 44, 0.9);
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  /* Inputs & Textareas */
+  input, textarea {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    border: 2px solid #0072ff;
+    box-shadow: 0px 0px 10px rgba(0, 114, 255, 0.5);
+    outline: none;
+  }
+  
+  /* Buttons */
+  button {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 114, 255, 0.4);
+  }
+  
+  /* Theme Toggle Button */
+  #toggleDarkMode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background: #0072ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  #toggleDarkMode:hover {
+    background: #005fd1;
+  }
+  
+  /* Assignment & Quiz Cards */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .dark-mode .card {
+    background: rgba(44, 44, 44, 0.9);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card strong {
+    color: #0072ff;
+  }
+  
+  /* Delete Button (if needed later) */
+  .delete-btn {
+    background: red;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  

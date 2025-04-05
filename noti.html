@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faculty Notifications</title>
+  <link rel="stylesheet" href="noti.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📢 Faculty Notifications</h1>
+    <form id="notifyForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <textarea id="message" placeholder="Enter your announcement..." required></textarea>
+      <select id="category" required>
+        <option value="" disabled selected>Select Category</option>
+        <option value="Class">Class</option>
+        <option value="Assignment">Assignment</option>
+        <option value="Exam">Exam</option>
+      </select>
+      <button type="submit">Send Notification</button>
+    </form>
+  </div>
+
+  <script src="noti.js"></script>
+</body>
+</html>

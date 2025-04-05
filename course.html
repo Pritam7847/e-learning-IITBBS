@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management</title>
+    <link rel="stylesheet" href="course.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+    </div>
+    
+    <div class="container">
+        <h1>📚 Course Management</h1>
+        
+        <form id="courseForm">
+            <input type="text" id="courseTitle" placeholder="Course Title" required>
+            <textarea id="courseDescription" placeholder="Course Description" required></textarea>
+            
+            <label for="videoUpload" class="file-label">🎥 Upload Video</label>
+            <input type="file" id="videoUpload" accept="video/*">
+
+            <label for="pdfUpload" class="file-label">📄 Upload PDF</label>
+            <input type="file" id="pdfUpload" accept="application/pdf">
+
+            <button type="submit">Add Course</button>
+        </form>
+
+        <h2>📋 Course List</h2>
+        <input type="text" id="searchInput" placeholder="Search courses...">
+
+        <div id="courseList"></div>
+    </div>
+
+    <script src="course.js"></script>
+</body>
+</html>

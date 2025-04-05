@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Performance Tracking</title>
+  <link rel="stylesheet" href="perform.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Student Performance Tracking</h1>
+
+    <div class="performance-section">
+      <h2>Enter Subject</h2>
+      <input type="text" id="subject" placeholder="Enter Subject" required>
+
+      <h2>Enter Grade</h2>
+      <input type="number" id="gradeInput" min="0" max="100" required>
+
+      <h2>Feedback</h2>
+      <textarea id="feedbackInput" placeholder="Enter feedback..." required></textarea>
+      <button onclick="submitPerformance()">Submit</button>
+    </div>
+  </div>
+
+  <script src="perform.js"></script>
+</body>
+</html>

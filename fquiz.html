@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment & Quiz Management</title>
+    <link rel="stylesheet" href="fquiz.css">
+</head>
+<body>
+    <div class="hero-bg"></div>
+    <div class="container">
+        <h1>📚 Assignment & Quiz Management</h1>
+
+        <!-- Dark Mode Toggle -->
+        <button id="toggleDarkMode" title="Toggle Dark Mode">🌙 Toggle Dark Mode</button>
+
+        <!-- Assignment Upload Section -->
+        <section class="upload-section">
+            <h2>Upload Assignment</h2>
+            <form id="assignmentForm">
+                <input type="text" id="assignmentTitle" placeholder="Assignment Title" required>
+                <input type="date" id="dueDate" required>
+                <input type="file" id="assignmentFile" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+
+        <!-- Quiz Creation Section -->
+        <section class="quiz-section">
+            <h2>Create a Quiz</h2>
+            <form id="quizForm">
+                <input type="text" id="quizTitle" placeholder="Quiz Title" required>
+                <textarea id="quizQuestion" placeholder="Enter Question" required></textarea>
+                <input type="text" id="optionA" placeholder="Option A" required>
+                <input type="text" id="optionB" placeholder="Option B" required>
+                <input type="text" id="optionC" placeholder="Option C" required>
+                <input type="text" id="optionD" placeholder="Option D" required>
+                <select id="correctAnswer" required>
+                    <option value="" disabled selected>Select Correct Answer</option>
+                    <option value="A">Option A</option>
+                    <option value="B">Option B</option>
+                    <option value="C">Option C</option>
+                    <option value="D">Option D</option>
+                </select>
+                <button type="submit">Add Question</button>
+            </form>
+        </section>
+
+        <!-- Display Assignments & Quizzes -->
+        <section class="display-section">
+            <h2>📑 Uploaded Assignments</h2>
+            <div id="assignmentList" class="cards-container"></div>
+
+            <h2>🎯 Created Quizzes</h2>
+            <div id="quizList" class="cards-container"></div>
+        </section>
+    </div>
+
+    <script src="fquiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+
+    <!-- Quiz Selection Page -->
+    <div id="quiz-selection">
+        <h1>Select a Subject</h1>
+        <h2>Quiz</h2>
+        <div class="quiz-container">
+            <div class="quiz-card" onclick="startQuiz('javascript')">
+                <h2>JavaScript</h2>
+                <p>Frontend & Backend scripting, ES6 features, and Async Programming.</p>
+            </div>
+            <div class="quiz-card" onclick="startQuiz('java')">
+                <h2>Java</h2>
+                <p>Object-Oriented Programming, JVM, and Multithreading.</p>
+            </div>
+            <div class="quiz-card" onclick="startQuiz('cpp')">
+                <h2>C++</h2>
+                <p>Data Structures, Pointers, and Competitive Programming.</p>
+            </div>
+            <div class="quiz-card" onclick="startQuiz('python')">
+                <h2>Python</h2>
+                <p>Data Science, AI, and Backend Development.</p>
+            </div>
+            <div class="quiz-card" onclick="startQuiz('web-dev')">
+                <h2>Web Development</h2>
+                <p>HTML, CSS, JavaScript, and Modern Frontend Frameworks.</p>
+            </div>
+            <div class="quiz-card" onclick="startQuiz('ai')">
+                <h2>Artificial Intelligence</h2>
+                <p>Neural Networks, Deep Learning, and AI Applications.</p>
+            </div>
+            <div class="quiz-card" onclick="startQuiz('ml')">
+                <h2>Machine Learning</h2>
+                <p>Regression, Classification, and Model Training.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Page (Initially Hidden) -->
+    <div id="quiz-container" style="display: none;">
+        <h2 id="question-text"></h2>
+        <ul id="options"></ul>
+        <p id="timer">Time left: 30s</p>
+        <button id="next-btn" onclick="nextQuestion()" style="display: none;">Next</button>
+    </div>
+
+    <!-- Result Page (Initially Hidden) -->
+    <div id="result-container" style="display: none;">
+        <h2>Quiz Completed!</h2>
+        <p id="score-text"></p>
+        <button onclick="restartQuiz()">Restart</button>
+    </div>
+
+
+
+    <!-- Assignment -->
+    <div class="container">
+        <h1>Assignment</h1>
+      
+        <form id="assignmentForm" enctype="multipart/form-data">
+          <label for="subject">Subject:</label>
+          <select id="subject" required>
+            <option value="" disabled selected>Select Subject</option>
+            <option value="C++">C++</option>
+            <option value="Python">Python</option>
+            <option value="Html">HTML</option>
+            <option value="Java">Java</option>
+            <option value="Web development">Web Development</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="SQL">SQL</option>
+            <option value="AIML">AIML</option>
+          </select>
+      
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+      
+          <label for="assignmentDeadline">Deadline:</label>
+          <input type="date" id="assignmentDeadline" required />
+      
+          <label for="assignmentFile">Upload File:</label>
+          <input type="file" id="assignmentFile" required />
+      
+          <button type="submit">Submit Assignment</button>
+        </form>
+      
+        <div id="message" class="hidden">✅ Your assignment has been submitted!</div>
+      
+        <ul id="assignmentList"></ul>
+      </div>
+      
+
+    <script src="script3.js"></script>
+</body>
+</html>

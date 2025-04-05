@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0e5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #735557;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header select,
+  header input,
+  header button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .description {
+    background-color: #dff0ff;
+    padding: 15px;
+    border-left: 5px solid #004080;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .course {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .course:hover {
+    transform: scale(1.01);
+  }
+  
+  .course h2 {
+    margin-top: 0;
+    color: #004080;
+  }
+  
+  button {
+    background-color: #004080;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0066cc;
+  }
+  
+  /* Course Count */
+  #courseCount {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #121212;
+    color: #eee;
+  }
+  
+  .dark-mode header {
+    background-color: #1a1a1a;
+  }
+  
+  .dark-mode .course {
+    background-color: #1f1f1f;
+    color: #ddd;
+  }
+  
+  .dark-mode .description {
+    background-color: #2a2a2a;
+    border-left-color: #00bfff;
+  }
+
+  .course {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .course img {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 15px;
+  }
+  
+  .course h2 {
+    margin: 0 0 5px 0;
+    color: #004080;
+}
